@@ -1,10 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 217 91.2% 59.8%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 43 96% 58%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 48 100% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,22 +33,15 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +90,57 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-toy-cloud text-foreground overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  .cloud-bg {
+    background-color: #F0F9FF;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 30 Q 35 10, 45 30 T 65 30 Q 75 10, 85 30 T 100 30 L 100 100 L 0 100 L 0 30 Z' fill='%23D1ECFF' fill-opacity='0.4'/%3E%3C/svg%3E");
+    background-size: 300px;
+  }
+  
+  .character-card {
+    @apply relative bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    border: 3px solid #FFD800;
+  }
+  
+  .toy-button {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-bold text-white rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-md;
+  }
+  
+  .toy-button.primary {
+    @apply bg-toy-blue hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .toy-button.secondary {
+    @apply bg-toy-yellow text-toy-blue hover:bg-yellow-400 focus:ring-yellow-400;
+  }
+  
+  .toy-button.red {
+    @apply bg-toy-red hover:bg-red-600 focus:ring-red-500;
+  }
+  
+  .event-date {
+    @apply bg-toy-red text-white font-bold rounded-lg py-1 px-4 inline-block;
+  }
+  
+  .faq-card {
+    @apply bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl text-center text-gray-700 mb-10 max-w-3xl mx-auto;
+  }
+  
+  .calendar-day {
+    @apply bg-toy-yellow text-toy-blue font-bold rounded-lg py-1 px-3 flex items-center justify-center shadow-md hover:bg-yellow-400 transition-all duration-300 cursor-pointer;
   }
 }
