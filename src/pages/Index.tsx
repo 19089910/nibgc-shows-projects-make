@@ -10,6 +10,8 @@ import AboutChurch from "./sections/AboutChurch";
 import Footer from "./sections/Footer";
 import ShareButton from "./sections/ShareButton";
 
+import {backgroundImage, logo, logoEnterprise } from "../assets/LpId"
+
 import { characters } from "../data/characters";
 import { faqs } from "../data/faqs";
 import { eventDates } from "../data/eventDates";
@@ -23,7 +25,12 @@ const Index = () => {
       
   return (
     <div>
-      {sectionsConfig.hero && <Hero heroRef={heroRef} />}
+      {sectionsConfig.hero && <Hero 
+        heroRef={heroRef} 
+        backgroundImage={backgroundImage} 
+        logo={logo} 
+        logoEnterprise={logoEnterprise} 
+      />}
       {sectionsConfig.characters && <Characters characters={characters}/>}
       {sectionsConfig.about && <About />}
       {sectionsConfig.faq && <FAQ faqs={faqs}/>}
