@@ -64,12 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				toy: {
-					blue: '#0054A6',
-					yellow: '#FFD800',
+					blue: '#A46024',
+					yellow: '#EFCB5C',
 					red: '#FC3C2D',
 					green: '#27AE60',
 					cloud: '#F0F9FF',
-					darkblue: '#003366'
+					darkblue: '#270900'
 				}
 			},
 			borderRadius: {
