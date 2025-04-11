@@ -2,7 +2,8 @@
 export const sectionsConfig = {
     hero: true,
     characters: false,
-    about: true,
+    about: false,
+    img: true,
     faq: true,
     howToGetThere: true,
     gallery: true,

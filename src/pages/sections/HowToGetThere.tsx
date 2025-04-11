@@ -1,8 +1,8 @@
 const HowToGetThere = () => {
     return (
-      <section className="py-20 px-4 cloud-bg">
+      <section className="py-20 px-4 bg-toy-darkblue">
         <div className="container max-w-6xl mx-auto">
-          <h2 className="section-title text-toy-blue opacity-0 scroll-animate">
+          <h2 className="section-title text-white opacity-0 scroll-animate">
             COMO CHEGAR!
           </h2>
           <div className="bg-white p-4 rounded-2xl shadow-lg mx-auto max-w-4xl opacity-0 scroll-animate">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Gallery from "@/components/GalleryDownload/Gallery";
 
-const Calendar = ({ eventDates }) => {
+const Calendar = ({ ...props }) => {
   const [selectedDate, setSelectedDate] = useState(null);
 
   const handleDayClick = (date) => {
@@ -10,11 +10,18 @@ const Calendar = ({ eventDates }) => {
 
   const closeGallery = () => setSelectedDate(null);
   return (
-    <section className="py-20 px-4 cloud-bg">
+    <section 
+    className="py-20 px-4"
+    style={{
+      backgroundImage: `url(${props.freme})`,
+      backgroundSize: "cover", // Garante que a imagem cubra toda a área
+      backgroundPosition: "center", // Centraliza a imagem
+    }}
+      >
       <div className="container max-w-6xl mx-auto">
-        <h2 className="section-title text-toy-blue opacity-0 scroll-animate">ESCOLHA O SEU DIA!</h2>
+        <h2 className="section-title text-toy-blue opacity-0 scroll-animate">BAIXE SUAS FOTOS AQUI!</h2>
         <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto opacity-0 scroll-animate">
-          {eventDates.map((date, idx) => (
+          {props.eventDates.map((date, idx) => (
             <button 
               key={idx} 
               className="calendar-day cursor-pointer hover:bg-toy-blue hover:text-white transition-all duration-300"

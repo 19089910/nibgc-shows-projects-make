@@ -1,6 +1,23 @@
-import { Info } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Info, ArrowRight, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const FAQ = ({ faqs }) => {
+  const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const visibleFaqs = isMobile && !showAll ? faqs.slice(0, 3) : faqs;
+
   return (
     <section className="py-20 px-4 bg-white">
       <div className="container max-w-6xl mx-auto">
@@ -8,7 +25,7 @@ const FAQ = ({ faqs }) => {
           PERGUNTAS FREQUENTES
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {faqs.map((faq) => (
+          {visibleFaqs.map((faq) => (
             <div
               key={faq.id}
               className="faq-card opacity-0 scroll-animate"
@@ -26,6 +43,24 @@ const FAQ = ({ faqs }) => {
             </div>
           ))}
         </div>
+        {isMobile && (
+          <div className="text-center mt-6">
+            <Button
+              className="toy-button.primary primary"
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? (
+                <>
+                  VER MENOS <ArrowLeft size={18} />
+                </>
+              ) : (
+                <>
+                  VER MAIS <ArrowRight size={18} />
+                </>
+              )}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
