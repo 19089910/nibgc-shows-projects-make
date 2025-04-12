@@ -68,7 +68,7 @@ const Hero = ({...props}) => {
             NOVA Igreja Batista Grande Circular
           </a>
           <p className="bg-white/90 px-4 py-3 rounded-full text-toy-blue font-bold shadow-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <Countdown targetDate="2025-04-13T00:00:00" />
+            <Countdown targetDate="2025-04-13T17:30:00" />
           </p>
         </div>
       </div>
