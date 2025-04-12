@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Gallery from "@/components/GalleryDownload/Gallery";
+import Gallery from "@/components/DownloadGallery/DownloadGallery";
 
-const Calendar = ({ ...props }) => {
+const DownloadGallery = ({ ...props }) => {
   const [selectedDate, setSelectedDate] = useState(null);
 
   const handleDayClick = (date) => {
@@ -54,4 +54,4 @@ const Calendar = ({ ...props }) => {
   );
 };
 
-export default Calendar;
+export default DownloadGallery;

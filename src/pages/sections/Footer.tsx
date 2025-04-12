@@ -62,7 +62,7 @@ const Footer = () => {
         {/* Créditos */}
         <div className="mt-10 text-center text-sm opacity-75">
           <p>© {new Date().getFullYear()} <strong>NIB Grande Circular</strong>. Todos os direitos reservados.</p>
-          <p className="mt-1">Desenvolvido por <span className="underline">NIBGC</span></p>
+          <p className="mt-1">Desenvolvido por <span className="underline">Lucas B. Ferreira</span></p>
         </div>
       </div>
     </footer>

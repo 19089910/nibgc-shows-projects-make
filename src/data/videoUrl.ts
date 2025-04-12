@@ -1,1 +1,1 @@
-export const videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+export const videoUrl = "https://www.youtube.com/embed/_OhfUKTOECQ?si=x5hxfMJiipK-T1mb";

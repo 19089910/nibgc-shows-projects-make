@@ -1,11 +1,11 @@
 import { sectionsConfig } from "../utils/sectionsConfig";
-import { Hero, Characters, About, FAQ, HowToGetThere, Gallery, Calendar, AboutChurch, Footer, ShareButton, Img } from "./sections";
+import { Hero, Characters, About, FAQ, HowToGetThere, MidiaGallery, DownloadGallery, AboutChurch, Footer, ShareButton, Img } from "./sections";
 import { backgroundImage, logo, logoEnterprise, apresenta, aboutImg, freme } from "../assets/LpId"
 
 import { characters } from "../data/characters";
 import { faqs } from "../data/faqs";
 import { eventDates } from "../data/eventDates";
-import { galleryImages } from "../data/galleryImages";
+import { midiaGallery } from "../data/midiaGallery";
 import { videoUrl } from "../data/videoUrl";
 import { aboutContent } from "../data/aboutContent"
 
@@ -28,8 +28,8 @@ const Index = () => {
       {sectionsConfig.img && <Img  aboutImg={aboutImg} aboutContent={aboutContent}/>}
       {sectionsConfig.faq && <FAQ faqs={faqs}/>}
       {sectionsConfig.howToGetThere && <HowToGetThere />}
-      {sectionsConfig.gallery && <Gallery images={galleryImages} />}
-      {sectionsConfig.calendar && <Calendar eventDates={eventDates} freme={freme}/>}
+      {sectionsConfig.gallery && <MidiaGallery midiaGallery={midiaGallery} />}
+      {sectionsConfig.calendar && <DownloadGallery eventDates={eventDates} freme={freme}/>}
       {sectionsConfig.aboutChurch && <AboutChurch videoUrl={videoUrl} />}
       {sectionsConfig.footer && <Footer />}
       {sectionsConfig.shareButton && <ShareButton />}

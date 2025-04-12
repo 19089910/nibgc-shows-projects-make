@@ -21,9 +21,11 @@ const AboutChurch = ({ videoUrl }) => {
             ></iframe>
           </div>
           <div className="text-center mt-6">
-            <Button className="toy-button red">
-              <Video size={18} /> ASSISTIR NO YOUTUBE
-            </Button>
+            <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+              <Button className="toy-button red">
+                <Video size={18} /> ASSISTIR NO YOUTUBE
+              </Button>
+            </a>
           </div>
         </div>
       </div>
