@@ -13,7 +13,7 @@ const Gallery = ({ selectedDate }) => {
   }
 
   const handleDownload = (image) => {
-    const url = `https://res.cloudinary.com/dstywrq5n/image/upload/fl_attachment/${image}`
+    const url = `https://res.cloudinary.com/dms5ua8nm/image/upload/fl_attachment/${image}`
     const link = document.createElement('a')
     link.href = url
     link.setAttribute('download', image.split('/').pop()) // Garante o nome do arquivo

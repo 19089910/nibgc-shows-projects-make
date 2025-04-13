@@ -1,18 +1,11 @@
   // Mapa de imagens por data
   export const galleryByDate = {
-    '13 Abril':[],
-    '16 Abril': [
-      'teste/o8njput1iukkf0hing2j',
-      'teste/ngvja6erjp9x3zik04il',
-      'teste/ngvja6erjp9x3zik04il',
+    '12 Abril':[
+      
     ],
-    '17 Abril': [
-      'teste/gbqhq15koxrmqcfoem6n',
-      'sample',
-      'sample2',
-      'sample',
-      'v1744173413/Frame_1_uq1omo'
-    ], 
+    '13 Abril':[],
+    '16 Abril': [],
+    '17 Abril': [], 
     "18 Abril":[],
     "19 Abril":[],
     "20 Abril":[],
