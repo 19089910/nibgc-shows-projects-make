@@ -1,7 +1,7 @@
   // Mapa de imagens por data
   export const galleryByDate = {
     '12 Abril':[
-      
+    //Ex: 'v1744173413/Frame_1_uq1omo'
     ],
     '13 Abril':[],
     '16 Abril': [],

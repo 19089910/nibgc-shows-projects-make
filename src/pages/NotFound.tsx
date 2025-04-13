@@ -2,6 +2,7 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Home } from "lucide-react";
+import { logo } from "../assets/LpId"
 
 const NotFound = () => {
   const location = useLocation();
@@ -18,7 +19,7 @@ const NotFound = () => {
       <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl max-w-md">
         <div className="relative w-48 h-48 mx-auto mb-6">
           <img 
-            src="https://i.imgur.com/dkK6Nvr.png" 
+             src={logo}
             alt="Rex" 
             className="w-full h-full object-contain animate-bounce" 
           />
