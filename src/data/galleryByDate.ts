@@ -1,14 +1,44 @@
-  // Mapa de imagens por data
-  export const galleryByDate = {
-    '12 Abril':[
-    //Ex: 'v1744173413/Frame_1_uq1omo'
-    ],
-    '13 Abril':[],
-    '16 Abril': [],
-    '17 Abril': [], 
-    "18 Abril":[],
-    "19 Abril":[],
-    "20 Abril":[],
-    "21 Abril":[]
-    // Adicione mais datas e imagens conforme necessário
-  }
+export const galleryByDate = {
+  '12 Abril':[
+'v1744588551/VAP2025/jwa3xyziwpapwytsqj1h.jpg',
+'v1744588551/VAP2025/uda1zwsqshg8lkdxkmgh.jpg',
+'v1744588551/VAP2025/opybmsfjei3glj2hyblh.jpg',
+'v1744588551/VAP2025/sl5drlp1i0aoxkwhlimw.jpg',
+'v1744588551/VAP2025/euv8jxmse4xm1prr7vzm.jpg',
+'v1744588551/VAP2025/pf7plti94okvywhegotk.jpg',
+'v1744588551/VAP2025/eai6eautvh9yedtygspv.jpg',
+'v1744588551/VAP2025/xsj04doxuzqsxyhtshyx.jpg',
+'v1744588551/VAP2025/cupq8znmecaww7fnsyah.jpg',
+'v1744588551/VAP2025/lcennoedyr1vm6plgys2.jpg',
+'v1744588551/VAP2025/mwojsbwroawvwy1zjcpf.jpg',
+'v1744588551/VAP2025/zyppnzysg6l38klei5ue.jpg',
+'v1744588551/VAP2025/uxld8arvv2ffffxnog5o.jpg',
+'v1744588551/VAP2025/mov4mscvrlmbilvzoxja.jpg',
+'v1744588551/VAP2025/yabvjdl6frsuo5p88zfy.jpg',
+'v1744588551/VAP2025/ve1u6vxcrxrr3msbmllr.jpg',
+'v1744588551/VAP2025/brljvjspw26dljwnesjg.jpg',
+'v1744588551/VAP2025/pvyvc1fyizgr7pgxom2i.jpg',
+'v1744588551/VAP2025/mjeovnwsnzq3qirx1k6a.jpg',
+'v1744588551/VAP2025/iya9b7uu4uqaxplcj7se.jpg',
+'v1744588551/VAP2025/oltiyz77rgfw5muedqpm.jpg',
+'v1744588551/VAP2025/augvh96muzpubtnit5wq.jpg',
+'v1744588551/VAP2025/r2l1suoahpiynpcxskys.jpg',
+'v1744588551/VAP2025/woy8amc6xkzip742wnwo.jpg',
+'v1744588551/VAP2025/z67lwhloe5nzcbiwnrrj.jpg',
+'v1744588551/VAP2025/er0gbnnfqra1fs0nhhnb.jpg',
+'v1744588551/VAP2025/qqcg8vu2xteyogxmjpjl.jpg',
+'v1744588551/VAP2025/tgcrjjbkwt7ntztwpqwb.jpg',
+'v1744588551/VAP2025/dwvftmx1a3cqhgstcinz.jpg',
+'v1744588551/VAP2025/eclwck9kzw5uhwlqhhoi.jpg',
+'v1744588551/VAP2025/h9dkfkqoslqfnvbgrcjz.jpg',
+'v1744588551/VAP2025/sillq0x2uscl812yuail.jpg',
+  ],
+  '13 Abril':[],
+  '16 Abril': [],
+  '17 Abril': [], 
+  "18 Abril":[],
+  "19 Abril":[],
+  "20 Abril":[],
+  "21 Abril":[]
+  // Adicione mais datas e imagens conforme necessário
+}
