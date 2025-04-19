@@ -2,6 +2,7 @@ import { sectionsConfig } from "../utils/sectionsConfig";
 import { Hero, Characters, About, FAQ, HowToGetThere, MidiaGallery, DownloadGallery, AboutChurch, Footer, ShareButton, Img } from "./sections";
 import { backgroundImage, logo, logoEnterprise, apresenta, aboutImg, freme } from "../assets/LpId"
 
+
 import { characters } from "../data/characters";
 import { faqs } from "../data/faqs";
 import { eventDates } from "../data/eventDates";
