@@ -32,14 +32,14 @@ for %%I in (*.JPG) do (
 )
 
 REM === UPLOAD PARA CLOUDINARY ===
-echo Fazendo upload para Cloudinary...
-if exist links.txt del links.txt
+REM echo Fazendo upload para Cloudinary...
+REM if exist links.txt del links.txt
 
-for %%I in (result_*.jpg) do (
-    for /f "delims=" %%A in ('cloudinary uploader upload "%%I" --folder %cloudinary_folder% --resource_type image --output json') do (
-        echo %%A | findstr /i /c:"secure_url" >> links.txt
-    )
-)
+REM for %%I in (result_*.jpg) do (
+REM     for /f "delims=" %%A in ('cloudinary uploader upload "%%I" --folder %cloudinary_folder% --resource_type image --output json') do (
+REM         echo %%A | findstr /i /c:"secure_url" >> links.txt
+REM     )
+REM )
 
 echo ------------------------------------
 echo Upload finalizado!
