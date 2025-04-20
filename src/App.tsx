@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DownloadFotos from "./pages/DownloadFotos";
-import UploadFotos from "./pages/uploadFotos"
+import UploadFotos from "./pages/UploadFotos"
 
 const queryClient = new QueryClient();
 
