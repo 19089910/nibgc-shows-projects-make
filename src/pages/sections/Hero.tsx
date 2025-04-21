@@ -4,8 +4,6 @@ import Countdown from "@/components/Countdown";
 import {formatEventDate} from '@/utils/formatEventDate'
 import { eventDates } from "@/data/eventDates";
 
-import APRESENTA from '@/assets/APRESENTA_.png'
-
 const Hero = ({...props}) => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
