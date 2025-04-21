@@ -4,6 +4,9 @@ import { processImageWithWatermark }  from '@/utils/convert';
 const watermark1 = 'https://res.cloudinary.com/dms5ua8nm/image/upload/v123/Marca_VP_2025_3D_1_ktk22v.png';
 const watermark2 = 'https://res.cloudinary.com/dms5ua8nm/image/upload/v123/NIB_Grande_Circular_1_rotkd8.png';
 
+const uploadUrl = 'https://api.cloudinary.com/v1_1/dms5ua8nm/image/upload/';
+const userUpload = 'ml_default';
+const folder = 'Gallerydownload/16'
 
 interface UploadedFile {
   name: string;
@@ -13,8 +16,6 @@ interface UploadedFile {
 
 const UploadedFotos: React.FC = () => {
   const [files, setFiles] = useState<UploadedFile[]>([]);
-
-  const uploadUrl = 'https://api.cloudinary.com/v1_1/dms5ua8nm/image/upload';
 
   const handleUpload = async () => {
     const updatedFiles = [...files];
@@ -31,7 +32,8 @@ const UploadedFotos: React.FC = () => {
 
         const formData = new FormData();
         formData.append('file', processedFile);
-        formData.append('upload_preset', 'ml_default');
+        formData.append('upload_preset', userUpload);
+        formData.append('folder', folder);
 
         element.status = 'uploading';
         setFiles([...updatedFiles]);
