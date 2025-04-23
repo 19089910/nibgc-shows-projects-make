@@ -1,12 +1,6 @@
 import React, { useState, ChangeEvent } from 'react';
 import { processImageWithWatermark }  from '@/utils/convert';
 
-const watermark1 = 'https://res.cloudinary.com/dms5ua8nm/image/upload/v123/Marca_VP_2025_3D_1_ktk22v.png';
-const watermark2 = 'https://res.cloudinary.com/dms5ua8nm/image/upload/v123/NIB_Grande_Circular_1_rotkd8.png';
-
-const uploadUrl = 'https://api.cloudinary.com/v1_1/dms5ua8nm/image/upload/';
-const userUpload = 'ml_default';
-const folder = 'Gallerydownload/16'
 
 interface UploadedFile {
   name: string;
@@ -16,6 +10,15 @@ interface UploadedFile {
 
 const UploadedFotos: React.FC = () => {
   const [files, setFiles] = useState<UploadedFile[]>([]);
+  const [selectedDate, setSelectedDate] = useState('');
+
+  const watermark1 = 'https://res.cloudinary.com/dms5ua8nm/image/upload/v123/Marca_VP_2025_3D_1_ktk22v.png';
+  const watermark2 = 'https://res.cloudinary.com/dms5ua8nm/image/upload/v123/NIB_Grande_Circular_1_rotkd8.png';  
+
+  const uploadUrl = 'https://api.cloudinary.com/v1_1/dms5ua8nm/image/upload/';
+  const userUpload = 'ml_default';
+  const folder = `Gallerydownload/${selectedDate}`
+  console.log(folder)
 
   const handleUpload = async () => {
     const updatedFiles = [...files];
@@ -78,7 +81,13 @@ const UploadedFotos: React.FC = () => {
   return (
     <div className="max-w-md mx-auto p-6 shadow-lg rounded-xl border mt-10">
       <h2 className="text-xl font-bold mb-4 text-center">Upload de Imagens</h2>
-
+      <input
+        type="date"
+        value={selectedDate}
+        onChange={(e) => setSelectedDate(e.target.value)}
+        className="border rounded px-3 py-2 w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      {selectedDate && <p className="mt-2 text-sm text-gray-600">Data selecionada: {selectedDate}</p>}
       <input
         type="file"
         accept="image/*"
