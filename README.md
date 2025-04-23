@@ -2,17 +2,10 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/8e75edfb-cc92-4311-84e3-b5743d7cc5d7
+**URL**: https://nibgc-lp-shows.vercel.app
 
 ## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/8e75edfb-cc92-4311-84e3-b5743d7cc5d7) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+https://www.figma.com/design/WxiZ7mlYoyWpkY2pBOaRgt/nibgc-lp-shows?node-id=0-1&m=dev&t=gQ0PB5CNtZUdZFwg-1
 
 **Use your preferred IDE**
 
@@ -62,8 +55,8 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/8e75edfb-cc92-4311-84e3-b5743d7cc5d7) and click on Share -> Publish.
+Simply open vercel: https://vercel.com/lucas-projects-2c96226f/nibgc-lp-shows. and click on Share -> Publish.
 
 ## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: nibgc-lp-shows
