@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const InstagramEmbed = ({ embedUrl }) => {
@@ -14,7 +15,7 @@ const InstagramEmbed = ({ embedUrl }) => {
         <iframe
           className="instagram-media instagram-media-rendered"
           src={`${embedUrl}/embed/?cr=1&v=14&wp=447`}
-          allowTransparency="true"
+          allowTransparency={true}
           allowFullScreen={true}
           frameBorder="0"
           height="716"
