@@ -103,66 +103,6 @@
     background-size: 300px;
   }
   
-  /* Western Theme Styles */
-  .western-bg {
-    background-color: #D2691E;
-    position: relative;
-  }
-  
-  .western-badge {
-    width: 200px;
-    height: 200px;
-    position: relative;
-  }
-  
-  .western-star {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(145deg, #DAA520, #B8860B);
-    border: 4px solid #8B4513;
-    position: relative;
-    border-radius: 8px;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
-  }
-  
-  .star-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  }
-  
-  .western-date {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    border: 2px solid #8B4513;
-  }
-  
-  .western-logo {
-    filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.6));
-  }
-  
-  .western-shadow {
-    filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.5));
-  }
-  
-  .western-button {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-lg border-2;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  }
-  
-  .western-button.primary {
-    @apply bg-amber-800 text-white border-amber-900 hover:bg-amber-700 focus:ring-amber-500;
-    background: linear-gradient(145deg, #B8860B, #8B6914);
-  }
-  
-  .western-button.secondary {
-    @apply bg-amber-600 text-white border-amber-700 hover:bg-amber-500 focus:ring-amber-400;
-    background: linear-gradient(145deg, #DAA520, #B8860B);
-  }
-  
   .character-card {
     @apply relative bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
     border: 3px solid #FFD800;
